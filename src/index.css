@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 @tailwind base;
@@ -65,10 +66,24 @@ body,
 #root {
   min-width: 320px;
   min-height: 100%;
+=======
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202124;
+  background: #f6f7f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+>>>>>>> b18446ea2676e7e2063df67152d1fca58cd239f1
 }
 
 body {
   margin: 0;
+<<<<<<< HEAD
   background: #f3f3f3;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -134,3 +149,13 @@ select {
     display: none !important;
   }
 }
+=======
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  font: inherit;
+}
+>>>>>>> b18446ea2676e7e2063df67152d1fca58cd239f1
