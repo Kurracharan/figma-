@@ -1,0 +1,28 @@
+@keyframes task-menu-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.task-menu-panel {
+  animation: task-menu-enter 120ms ease-out both;
+  transform-origin: top left;
+}
+
+@media (max-width: 767px) {
+  .task-menu-panel {
+    top: auto !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    left: 12px !important;
+    width: auto !important;
+    max-height: min(70vh, 520px);
+    border-radius: 16px;
+    transform-origin: bottom center;
+  }
+}

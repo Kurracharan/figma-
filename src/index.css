@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .price-range-input::-webkit-slider-runnable-track {
+    height: 3px;
+    background: transparent;
+  }
+
+  .price-range-input::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    margin-top: -5.5px;
+    appearance: none;
+    border: 1px solid #c8c8c8;
+    border-radius: 9999px;
+    background-color: #fff;
+    background-image: linear-gradient(
+      to right,
+      transparent 4px,
+      #a5a5a5 4px,
+      #a5a5a5 5px,
+      transparent 5px,
+      transparent 8px,
+      #a5a5a5 8px,
+      #a5a5a5 9px,
+      transparent 9px
+    );
+    pointer-events: auto;
+    cursor: grab;
+  }
+
+  .price-range-input::-moz-range-track {
+    height: 3px;
+    background: transparent;
+  }
+
+  .price-range-input::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #c8c8c8;
+    border-radius: 9999px;
+    background-color: #fff;
+    background-image: linear-gradient(
+      to right,
+      transparent 3px,
+      #a5a5a5 3px,
+      #a5a5a5 4px,
+      transparent 4px,
+      transparent 7px,
+      #a5a5a5 7px,
+      #a5a5a5 8px,
+      transparent 8px
+    );
+    pointer-events: auto;
+    cursor: grab;
+  }
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f3f3f3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+.time-select-scrollbar {
+  scrollbar-color: #d1d5db transparent;
+  scrollbar-width: thin;
+}
+
+.time-select-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.time-select-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: #d1d5db;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  .print-export-area[data-print-active='true'],
+  .print-export-area[data-print-active='true'] * {
+    visibility: visible !important;
+  }
+
+  .print-export-area[data-print-active='true'] {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 auto auto 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: auto !important;
+    clip-path: none !important;
+  }
+
+  .print-export-area table {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .print-export-area .print-select-column {
+    display: none !important;
+  }
+
+  .print-export-area button,
+  .print-export-area input,
+  .print-export-area svg {
+    display: none !important;
+  }
+}
